@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{#<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -10,4 +10,14 @@
         <h1> {{ index }} </h1>
         {% block javascripts %}{% endblock %}
     </body>
-</html>
+</html>#}
+
+{% extends "base.html.twig" %}
+
+{% block title %} {{ index }} {% endblock %}
+{% block body %}
+    {{ parent() }}
+    {% block index %}
+    <h1>{{ index }}</h1>
+    {% endblock %}
+{% endblock %}

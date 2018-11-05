@@ -10,6 +10,3 @@ app_lucky_number:
   path: /lucky/number
   controller: App\Controller\LuckyController::number
 
-app_index_hello:
-  path: /home/hello
-  controller: App\Controller\HomeController::index
